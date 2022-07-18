@@ -13,7 +13,7 @@ export default defineConfig({
     deps: {
       inline: [/solid-js/],
     },
-    include: ['test/**/*.test.{tsx,ts}'],
+    include: ['src/**/*.test.{tsx,ts}'],
   },
   build: {
     target: 'esnext',
