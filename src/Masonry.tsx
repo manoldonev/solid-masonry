@@ -93,10 +93,10 @@ const MasonryComponent: ParentComponent<MasonryProps> = (props) => {
   );
 
   return (
-    <Dynamic component={props.as ?? 'div'} class={props.class} ref={containerRef!}>
+    <Dynamic component={props.as ?? 'div'} class={props.class} ref={containerRef!} data-testid="masonry-container">
       {props.children}
     </Dynamic>
   );
 };
 
-export { MasonryComponent as Masonry };
+export { MasonryComponent };

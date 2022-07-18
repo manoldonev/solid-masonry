@@ -88,7 +88,7 @@
   },
   "overrides": [
     {
-      "files": ["test/**/*.test.{ts,tsx}"],
+      "files": ["src/**/*.test.{ts,tsx}"],
       "extends": ["plugin:jest-dom/recommended", "plugin:testing-library/dom"],
       "rules": {
         "testing-library/no-await-sync-events": "error",
