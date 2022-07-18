@@ -1,0 +1,73 @@
+{
+  "name": "solid-masonry",
+  "version": "0.0.1",
+  "description": "SolidJS component exposing the functionality of @desandro's Masonry grid layout library",
+  "author": "Manol Donev <manol.donev@gmail.com> (https://github.com/manoldonev)",
+  "license": "MIT",
+  "homepage": "https://github.com/manoldonev/solid-masonry",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:manoldonev/solid-masonry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manoldonev/solid-masonry/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "start": "vite --config ./dev/vite.config.ts",
+    "build": "tsup",
+    "test": "vitest --config ./dev/vite.config.ts",
+    "prettier": "prettier --check src",
+    "lint": "eslint src --quiet",
+    "lint:fix": "pnpm run lint --fix",
+    "lint:vitest": "eslint test --quiet"
+  },
+  "keywords": [
+    "solid",
+    "solidjs",
+    "masonry",
+    "layout",
+    "masonry-layout",
+    "masonry-grid-layout"
+  ],
+  "peerDependencies": {
+    "solid-js": "^1.3.0"
+  },
+  "dependencies": {
+    "@solid-primitives/mutation-observer": "^1.1.0",
+    "masonry-layout": "^4.2.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@types/masonry-layout": "^4.2.5",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-solid": "^0.7.1",
+    "eslint-plugin-testing-library": "^5.5.1",
+    "jsdom": "^20.0.0",
+    "prettier": "^2.7.1",
+    "regenerator-runtime": "^0.13.9",
+    "solid-js": "^1.3.0",
+    "solid-testing-library": "^0.3.0",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.1",
+    "vite-plugin-solid": "^2.3.0",
+    "vitest": "^0.18.1"
+  }
+}
